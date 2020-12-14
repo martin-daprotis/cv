@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/cv/static/js/main.8cb28741.chunk.js",
+    "main.js.map": "/cv/static/js/main.8cb28741.chunk.js.map",
+    "runtime-main.js": "/cv/static/js/runtime-main.a7e27023.js",
+    "runtime-main.js.map": "/cv/static/js/runtime-main.a7e27023.js.map",
+    "static/css/2.09ae8418.chunk.css": "/cv/static/css/2.09ae8418.chunk.css",
+    "static/js/2.b22c2e9e.chunk.js": "/cv/static/js/2.b22c2e9e.chunk.js",
+    "static/js/2.b22c2e9e.chunk.js.map": "/cv/static/js/2.b22c2e9e.chunk.js.map",
+    "index.html": "/cv/index.html",
+    "precache-manifest.340a39aaa45cc9c8c6113b9a646b449f.js": "/cv/precache-manifest.340a39aaa45cc9c8c6113b9a646b449f.js",
+    "service-worker.js": "/cv/service-worker.js",
+    "static/css/2.09ae8418.chunk.css.map": "/cv/static/css/2.09ae8418.chunk.css.map",
+    "static/js/2.b22c2e9e.chunk.js.LICENSE.txt": "/cv/static/js/2.b22c2e9e.chunk.js.LICENSE.txt",
+    "static/media/keyboard.jpg": "/cv/static/media/keyboard.52d9f87b.jpg",
+    "static/media/pic4.png": "/cv/static/media/pic4.f374d503.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7e27023.js",
+    "static/css/2.09ae8418.chunk.css",
+    "static/js/2.b22c2e9e.chunk.js",
+    "static/js/main.8cb28741.chunk.js"
+  ]
+}
