@@ -75,7 +75,6 @@ function App( { toggleTheme, theme, t }) {
         />
         <FirstImpresion t={t} />
         <Container >
-          <Ej3 name='Pedro'/> */}
           <Box justifyContent="center">
             <Box className={classes.topic} ref={topics[0]}>
               <Presentation t={t} />
