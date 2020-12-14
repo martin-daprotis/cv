@@ -79,30 +79,30 @@
     }
   ],
   "work": [
-    {
-      "from": "2015-01-05",
-      "until": "Presente",
-      "place": "Cooperativa Obrera LTDA",
-      "position": "Full-Stack Developer",
-      "description": "Actualmente estoy trabajando como Full Stack developer en Cooperativa Obrera LTDA, normalmente me dedico a hacer los sistema de forma integral, tanto la parte del front-end  como del back-end, realizando los sistemas que se utilizan en las distintas áreas de la empresa como RRHH, el Área de Contaduría, Seguridad e Higiene, Comercialización, Logística entre otros. \n     Comúnmente comienzo recabando la información necesaria de los requerimientos del sistema y ayudando a los futuros usuarios a darse una idea de lo que realmente están solicitando. Luego listo las necesidades para priorizarlas y comenzar el desarrollo, esto lo hacemos también con la practica de desarrollo Ágil, lo cual nos permite tener un seguimiento continuo y los usuarios pueden ver el avance que se lleva a cabo de forma constante. Finalmente se realizan los testeos y se pone en producción el sistema. También cabe destacar que realizamos el mantenimiento y soporte de aquellos sistemas que desarrollamos.",
-      "status": 1
-    },
-    {
-      "from": "2014-04-01",
-      "until": "2015-01-01",
-      "place": "Alas Ingeniería",
-      "position": "",
-      "description": "Migración de la Base de Datos de Smart Plant Foundation para la Empresa PORFERTIL.",
-      "status": 1
-    },
-    {
-      "from": "2014-02-01",
-      "until": "2014-04-01",
-      "place": "MG Consultora",
-      "position": "",
-      "description": "Desarrollo de sistema embebido que permitio mejorar las habilitades cognitivas",
-      "status": 1
-    }
+      {
+        "from": "2020-09",
+        "until": "Presente",
+        "place": "Bglobal",
+        "position": "Ssr Front-End Developer",
+        "description": "Actualmente tabajando en la integración de un headless Magento 2, como tambíen de un headless WordPress dentro de un sitio web basado en NextJs utilizando el Framework de React Storefront con un connector customizado para poder consumir la API de Magento 2 por Graphql. Adicional a esto estamos implementando dentro de este sitio una web institucional.",
+        "status": 1
+      },
+      {
+        "from": "2015-01",
+        "until": "2020-09",
+        "place": "Cooperativa Obrera",
+        "position": "Sr Full-Stack Developer",
+        "description": "Desarrolle una gran variedad de sistemas internos a la empresa basados en web, donde fui responsable del proceso completo de desarrollo de los mismos. | Estos sistemas estaban contenidos en un portal Intranet usado por una amplia cantidad de empleados. Trabajamos con Continuous Integration y Continuos Deployment en server propios de la empresa. Todos los desarrollos fueron llevados a cabo en ambientes Dockerizados y aplicando metodologias SCRUM. | Por más de 5 años he trabajo con un LAMP stack usando CodeIgniter (MVC) como framework principal.| |>  Back End: Inicialmente utilizado PHP 5.6 y luego realizamos la migración a PHP 7.0 en todos nuestros sistemas. | |>  Front End: (Single Page Websites) utilizamos tecnologías como Javascript, JQuery, AJAX, JSON, ES6+ siempre intentando optimizar con lazy loading y otras técnicas a la vez que se intentaba reducir la cantidad de http requests. | |>   UI: Para el caso de interfaz gráfica creamos nuestros propios elementos estilizados con CSS, SASS, Flex Box y Grid, asi evitando depender de librerias de terceros. | |>  DB: Diseñamos y optimizamos MySQL queries con operaciones transaccionales, generando triggers and stored procedures solo cunado era necesario. || Mas tarde pasamos a utilizar MERN (MySQL y Mongo DB, ExpressJs, ReactJs, NodeJs) stack aplicando TDD al proceso con JEST and RTL.",
+        "status": 1
+      },
+      {
+        "from": "2014-07",
+        "until": "2015-01",
+        "place": "ALAS Ing.",
+        "position": "Script Writer",
+        "description": "En este proyecto de 6 meses estuve a cargo de la migración de la base de datos de Smart Plant Foundation para la empresa PROFERTIL. La base de datos era una base Oracle y la migración se llevó a cabo con scripts para la migración y el control de aserción del proceso, cumpliendo con los requisitos impuestos por los estandares ISO-9001.",
+        "status": 1
+      }
   ],
   "knowledge": {
     "work_related": [

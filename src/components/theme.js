@@ -18,6 +18,9 @@ const appThemeOptions = {
       text: {
         secondary: cyan[900],
       },
+      background:{
+        default: '#f3f3f3'
+      }
     },
   },
   [AppTheme.DARK]: {

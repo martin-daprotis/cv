@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useState,useEffect } from "react";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { CssBaseline, Box, makeStyles, Container } from "@material-ui/core";
 import NavBar from "./components/NavBar";
@@ -8,14 +8,9 @@ import PersonalSkills from "./components/PersonalSkills.js";
 import Knowledge from "./components/Knowledge.js";
 import Work from "./components/Work.js";
 import {SectionContainer1,SectionLastContainer2} from "./components/StyledComponents/SectionContainer"
-// import Ej1 from "./components/MANUAL/ej1"
-// import Ej2 from "./components/MANUAL/ej2"
-// import Ej3 from "./components/MANUAL/ej3"
 
 import FirstImpresion from "./components/FirstImpresion"
 import { AppTheme } from "./components/types";
-
-
 
 // Translation Higher Order Component
 import {
@@ -45,14 +40,17 @@ const useStyles = makeStyles((theme) => ({
 function App( { toggleTheme, theme, t }) {
   const classes = useStyles();
   const muiTheme = createMuiTheme(AppThemeOptions[theme]);
-
-  const [key, setLanguageType] = React.useState("EN");
+  
+  const [lang, setLang] = useState("EN");
 
   const handleClickLang = (e) => {
-    console.log("click lang", key);
-    setLanguageType(key === "SP" ? "EN" : "SP");
-    setLanguage(key);
+    setLang(lang === "SP" ? "EN" : "SP");
   };
+
+  useEffect(() => {
+    setLanguageCookie(lang);
+    setLanguage(lang);
+  },[lang])
 
   const [tabValue, setValue] = React.useState(0);
   const topics = [useRef(null), useRef(null), useRef(null), useRef(null)];
@@ -75,11 +73,8 @@ function App( { toggleTheme, theme, t }) {
           handleClickTab={handleClickTab}
           tabValue={tabValue}
         />
-              <FirstImpresion t={t} />
-        <Container>
-          {/* <Ej1/> */}
-          {/* <Ej3/>
-          <Ej3 name='Juan'/>
+        <FirstImpresion t={t} />
+        <Container >
           <Ej3 name='Pedro'/> */}
           <Box justifyContent="center">
             <Box className={classes.topic} ref={topics[0]}>
@@ -95,7 +90,7 @@ function App( { toggleTheme, theme, t }) {
             </Box>
             <Box className={classes.topic} ref={topics[3]}>
               <SectionLastContainer2 isDark={theme!== AppTheme.LIGHT}>
-              <Work t={t} language={key} />
+              <Work t={t} language={lang} />
               </SectionLastContainer2>
             </Box>
           </Box>

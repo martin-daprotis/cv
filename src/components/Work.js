@@ -35,7 +35,8 @@ export default function ControlledExpansionPanels({ language, t }) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
-  const lang = language === "EN" ? SP : EN;
+  console.log('LANG',language)
+  const lang = language === "EN" ? EN : SP;
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);

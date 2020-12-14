@@ -63,7 +63,6 @@ export default function Knowledge({ t }) {
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.pageYOffset; // or use document.documentElement.scrollTop;
-      console.log(currentPosition)
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
 

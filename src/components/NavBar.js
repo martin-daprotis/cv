@@ -90,7 +90,7 @@ export default function NavBar({
                   </Avatar>
                 </IconButton>
                 <IconButton>
-                  <Icon onClick={handleClick}>{icon}</Icon>
+                  <Icon style={{color:"#FFF"}} onClick={handleClick}>{icon}</Icon>
                 </IconButton>
               </Box>
             </Grid>
