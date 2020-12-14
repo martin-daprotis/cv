@@ -85,7 +85,7 @@ function App( { toggleTheme, theme, t }) {
               </SectionContainer1>
             </Box>
             <Box className={classes.topic} ref={topics[2]}>
-              <PersonalSkills t={t} />
+              <PersonalSkills t={t}  language={lang} />
             </Box>
             <Box className={classes.topic} ref={topics[3]}>
               <SectionLastContainer2 isDark={theme!== AppTheme.LIGHT}>

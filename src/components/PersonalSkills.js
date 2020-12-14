@@ -12,6 +12,7 @@ import {
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import EN from "../lang_source/EN.json";
 import SP from "../lang_source/SP.json";
+import { v4 as uuidv4 }from 'uuid'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,13 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PersonalSkills({ language, t }) {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
   const lang = language === "EN" ? SP : EN;
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
 
   function Item({ panel,title, description }) {
     return (
@@ -86,7 +81,7 @@ export default function PersonalSkills({ language, t }) {
       {lang.personal_skills.map((k, i) => {
         return (
           <Item
-            key={`ps_${i}`}
+            key={uuidv4()}
             title={k.skill}
             description={k.description}
             panel={i}

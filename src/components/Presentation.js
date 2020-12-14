@@ -16,9 +16,9 @@ import {
   CardHeader,
   CardContent,
   CardActions,
+  Tooltip
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import GetAppIcon from '@material-ui/icons/GetApp';
 import image from "../media/pic4.png";
 import {
   WhatsappShareButton,
@@ -30,6 +30,7 @@ import {
   LinkedinShareButton,
   LinkedinIcon,
 } from "react-share";
+import cv from "../media/CV_MARTIN_DAPROTIS.pdf";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -172,16 +173,11 @@ function Profile({ t }) {
               <LinkedinShareButton className={classes.iconShare} url={shareUrl}>
                 <LinkedinIcon size={32} round />
               </LinkedinShareButton>
-              <IconButton
-                aria-label="Download CV"
-                style={{ marginBottom: "5px" }}
-                href="/public/CV_MARTIN_DAPROTIS.pdf"  
-                target="_blank" 
-                rel="noopener noreferrer" 
-                download="CV_MARTIN_DAPROTIS.pdf"
-              >
-                <GetAppIcon/>
-              </IconButton>
+              <Tooltip title="Descargar CV" aria-label="descargar">
+                <IconButton href={cv} target="_blank">
+                  <Icon>get_app_icon</Icon>
+                </IconButton>
+              </Tooltip>
             </CardActions>
           </Card>
         </Box>

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useLayoutEffect} from "react";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
 import {
@@ -40,7 +40,7 @@ export default function NavBar({
   const classes = useStyles();
   const [themeType, setThemeType] = React.useState(true);
   const [icon, setIcon] = React.useState("brightness_2");
-  const [scrollTop, setScrollTop] = useState(0);
+  const [scrollTop, setScrollTop] = useState(window.pageYOffset);
 
   const handleClick = (e) => {
     setThemeType(!themeType);
@@ -48,12 +48,12 @@ export default function NavBar({
     setIcon(icon === "brightness_7" ? "brightness_2" : "brightness_7");
   };
 
-  useEffect(() => {
-    function onScroll() {
+  
+  useLayoutEffect(() => {
+    const onScroll = () =>  {
       let currentPosition = window.pageYOffset; // or use document.documentElement.scrollTop;
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
-
     window.addEventListener("scroll", onScroll);
     return window.addEventListener("scroll", onScroll);
   }, [scrollTop]);

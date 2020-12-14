@@ -62,20 +62,20 @@
   },
   "personal_skills" :[
     {
-      "skill":"Communication",
-      "description":"During my work experience at Cooperativa Obrera I had to meet with the client in order to gather requirements to start the development process of new Systems. Additionally, was responsible for answering client enquiries by phone solving their problems and giving support on systems which I was maintaining"
+      "skill":"Comunicación",
+      "description":"Durante mi experiencia laboral en Cooperativa Obrera era común reunirnos con el cliente para poder obtener los requerimientos necesarios para comenzar con el proceso de desarrollo de los nuevos sistemas. Adicionalmente, era responsable de contestar las llamadas de los usuarios y resolver cualquier duda que tuvieran o en caso de detectar algún error poder obtener información al respecto."
     },
     {
-      "skill":"Responsability",
-      "description":"I was responsible of developing and maintaining systems with sensible data such as employee salaries or bank transactions systems. Those systems were crucial to make the monthly payments of the 4000+ employees of the Company."
+      "skill":"Responsabilidad",
+      "description":"Fui responsable de desarrollar y mantener sistemas que administraban información sensible como los salarios de los empleados, transacciones bancarias entre otros. Estos sistemas eran cruciales para poder realizar el pago de los más de 4000 empleados de la compañía.."
     },
     {
-      "skill":"Teamwork",
-      "description":"Even though I had to work in some cases on my own it is always good to participate in a team. For more than 5 year now, I have been part of a development team, in which all members participate in a collaborative way with SCRUM methodologies."
+      "skill":"Trabajo en equipo",
+      "description":"Aunque he tenido que trabajar algunas veces de forma particular siempre es mejor participar en el desarrollo junto a un equipo. Por más de 5 años, he formado parte de equipos de desarrollo en el cual he podido colaborar de forma activa aplicando metodologías ágiles como SCRUM.."
     },
     {
-      "skill":"Adaptability",
-      "description":"This skill is mandatory to work in web development, often when I encounter new challenges it is necessary to investigate and start learning new technologies, packages or libraries, and apply if suitable"
+      "skill":"Adaptabilidad",
+      "description":"Esta habilidad es sumamente necesaria para poder trabajar en el desarrollo web. A menudo cuando uno se encuentra con nuevos desafíos es necesario investigar e incorporar conocimientos sobre algúna tecnología o libraría nueva y aplicar los mismos cuando sea adecuado. Para esto es necesario adaptarse rápidamente a los cambios de tecnología constantes."
     }
   ],
   "work": [

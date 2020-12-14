@@ -33,14 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ControlledExpansionPanels({ language, t }) {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  console.log('LANG',language)
   const lang = language === "EN" ? EN : SP;
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
 
   function WorkItem({ panel, place, from, until, pos, description }) {
     return (
