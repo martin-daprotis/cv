@@ -1,0 +1,266 @@
+{
+  "hi": "Hello, I'm",
+  "lang": "EN",
+  "navbar": {
+    "title": "My CV",
+    "profile": "Profile",
+    "personal_skills": "Personal Skills",
+    "knowledge": "Knowledge",
+    "work": "Work Experience"
+  },
+  "personal_data": {
+    "name": "Martín",
+    "surname": "Daprotis",
+    "dni": 32838127,
+    "bdate": "February 16th, 1987",
+    "bday": "Birthday",
+    "country": "Argentine",
+    "city": "Bahía Blanca",
+    "contact": {
+      "linkedind": "",
+      "phone": "299-4568950",
+      "email": "mdaprotis@hotmail.com"
+    }
+  },
+  "summary":"Sumary of Qualifications",
+  "profile": "I am a Computer Systems Engineer graduated from Universidad Nacional del Sur in 2014. Familiarized with a variety of programming languages for web development and embedded systems. I am currently working as a Ssr Front End Developer, nevertheless I have worked as a Sr Full-Stack Developer for more than 6 years on both Back-End and Front-End, gathering requirements, designing UI, developing, testing and debugging our systems.",
+  "study": {
+    "primary": {
+      "from": "",
+      "until": "",
+      "institution": "",
+      "title": "",
+      "description": "",
+      "status": 0
+    },
+    "secondary": {
+      "from": "",
+      "until": "",
+      "institution": "",
+      "title": "",
+      "description": "",
+      "status": 0
+    },
+    "university": {
+      "from": "2007",
+      "until": "2014",
+      "institution": "Universidad Nacional del Sur",
+      "degree": "Computer Systems Engineer",
+      "description": "",
+      "status": 1
+    },
+    "courses": [
+      {
+        "from": "",
+        "until": "",
+        "institution": "",
+        "title": "",
+        "description": "",
+        "status": 0
+      }
+    ]
+  },
+  "personal_skills" :[
+    {
+      "skill":"Communication",
+      "description":"During my work experience as a Full Stack Web Developer I had to meet with the client in order to gather requirements to start the development process of new Systems. Additionally, was responsible for answering client enquiries by phone solving their problems and giving support on systems which I was maintaining."
+    },
+    {
+      "skill":"Responsability",
+      "description":"I was responsible for developing and maintaining systems with sensible data such as employee salaries or bank transactions systems. These systems were crucial to make the monthly payments of the 4000+ employees of the company."
+    },
+    {
+      "skill":"Teamwork",
+      "description":"Even though I had to work in some cases on my own it is always better to face challenges as a team. For more than 5 year now, I have been part of a development team, in which all members participate in a collaborative way with SCRUM methodologies."
+    },
+    {
+      "skill":"Adaptability",
+      "description":"This skill is mandatory to work in web development, often when I encounter new challenges it is necessary to investigate and get some insight about new technologies, packages or libraries."
+    }
+  ],
+  "work": [
+    {
+      "from": "2020-09",
+      "until": "Present",
+      "place": "Bglobal",
+      "position": "Ssr Front-End Developer",
+      "description": "Working on an integration of a headless Magento 2, and a WordPress webpage into a NextJs based website using React Storefront with a custom connector in order to consume the GraphQL Magento 2 API. We are also implementing inside this page an institutional page in the same site.",
+      "status": 1
+    },
+    {
+      "from": "2015-01",
+      "until": "2020-09",
+      "place": "Cooperativa Obrera",
+      "position": "Sr Full-Stack Developer",
+      "description": "Developed a vast variety of systems, taking responsibility of the full process of internal websites |contained in an Intranet portal used by the entire company. We worked with Continuous Integration and | Deployment on internal servers, all the development is carried out in a Dockerized environment | applying SCRUM methodology. | For more than 5 years I have been working with a LAMP stack using CodeIgniter (MVC) as a main | framework: | |>  Back End: Initially using PHP 5.6 and then making a transition to PHP 7.0 in all of our systems. | |>  Front End: (Single Page Websites) using Javascript, JQuery, AJAX, JSON, ES6+ always optimizing the | Front-End with lazy loading and reducing the amount of http requests on demand. | |>   UI: own styled elements using CSS and SASS avoiding the dependencies of third party’s libraries. | |>  DB: design and optimize MySQL queries with transactional operations, generating triggers and stored | procedures in necessary cases. || Later we moved on to a MERN (MySQL and Mongo DB, ExpressJs, ReactJs, NodeJs) stack applying TDD to the process with JEST and RTL.",
+      "status": 1
+    },
+    {
+      "from": "2014-07",
+      "until": "2015-01",
+      "place": "ALAS Ing.",
+      "position": "Script Writer",
+      "description": "In this 6-month project, I was in charge of the migration of the Smart Plant Foundation database for PROFERTIL . The database was an Oracle DB and the migration was carried out with scripts to migrate and control the assertion of the process, fulfilling the necessary requirements to meet ISO-9001 standads.",
+      "status": 1
+    }
+  ],
+  "knowledge": {
+    "work_related": [
+      {
+        "title": "web_development",
+        "bgColor": "#ef5350",
+        "list": [
+          {
+            "title": "JavaScript",
+            "icon": "devicon-javascript-plain",
+            "value": 80
+          },
+          {
+            "title": "Jquery",
+            "icon": "devicon-jquery-plain",
+            "value": 80
+          },
+          { "title": "ES6+", "icon": "", "value": 80 },
+          { "title": "React.Js", "icon": "cib-react", "value": 40 },
+          {
+            "title": "Redux",
+            "icon": "cib-redux ",
+            "value": 70
+          },
+          {
+            "title": "Graphql",
+            "icon": "",
+            "value": 50
+          },
+          {
+            "title": "Node.Js",
+            "icon": "devicon-nodejs-plain",
+            "value": 60
+          },
+          {
+            "title": "Express.Js",
+            "icon": "devicon-express-original",
+            "value": 60
+          },
+          {
+            "title": "NEXT.Js",
+            "icon": "",
+            "value": 40
+          },
+          {
+            "title": "Python",
+            "icon": "devicon-python-plain",
+            "value": 40
+          },
+          { "title": "PHP", "icon": "devicon-php-plain", "value": 90 },
+          {
+            "title": "CodeIgniter",
+            "icon": "cib-codeigniter",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "title": "web_design",
+        "bgColor": "#cebe32",
+        "list": [
+          { "title": "CSS", "icon": "devicon-css3-plain", "value": 60 },
+          { "title": "SASS", "icon": "devicon-sass-original", "value": 40 },
+          { "title": "HTML5", "icon": "devicon-html5-plain", "value": 70 },
+          { "title": "Bootstrap", "icon": "cib-bootstrap ", "value": 30 },
+          { "title": "Material UI", "icon": " devicon-materialui-plain", "value": 70 },
+          { "title": "Styled Components", "icon": "", "value": 50 }
+        ]
+      },
+      {
+        "title": "csv",
+        "bgColor": "#4db6ac",
+        "list": [
+          {
+            "title": "GIT",
+            "icon": "devicon-git-plain",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "title": "db",
+        "bgColor": "#8bc34a",
+        "list": [
+          { "title": "MySQL", "icon": "cib-mysql", "value": 90 },
+          {
+            "title": "Oracle",
+            "icon": "devicon-oracle-original",
+            "value": 30
+          },
+          {
+            "title": "Mongo DB",
+            "icon": "devicon-mongodb-plain",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "title": "project_managment",
+        "bgColor": "#3283ce",
+        "list": [
+          {
+            "title": "Agile/SCRUM",
+            "icon": "",
+            "value": 60
+          },
+          {
+            "title": "Jira",
+            "icon": "",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "title": "other_technologies",
+        "bgColor": "#3283ce",
+        "list": [
+          {
+            "title": "Docker",
+            "icon": "cib-docker",
+            "value": 40
+          }
+        ]
+      }
+    ],
+    "professional_skills": {
+      "bgColor": "#fba661",
+      "list": [
+        { "title": "ps_communication", "icon": "", "value": 80 },
+        { "title": "ps_team_work", "icon": "", "value": 90 },
+        { "title": "ps_responsability", "icon": "", "value": 100 },
+        { "title": "ps_creativity", "icon": "", "value": 70 },
+        { "title": "ps_confidentiality", "icon": "", "value": 100 },
+        { "title": "ps_pressure", "icon": "", "value": 70 },
+        { "title": "ps_adaptability", "icon": "", "value": 90 },
+        { "title": "ps_desition_making", "icon": "", "value": 80 }
+      ]
+    }
+  },
+  "skills": [],
+  "work_translation": {
+    "technical_skills": "Technical Skills",
+    "professional_skills": "Professional Skills",
+    "web_development": "Web Development",
+    "web_design": "Web Design",
+    "frameworks": "Frameworks",
+    "other_technologies": "Other Technologies",
+    "project_managment": "Project Managment",
+    "csv": "CVS",
+    "db": "DataBase",
+    "embedded_sistems": "Embedded Systems",
+    "ps_communication": "Communication",
+    "ps_team_work": "Team Work",
+    "ps_responsability": "Responsability",
+    "ps_creativity": "Creativity",
+    "ps_confidentiality": "Confidentiality",
+    "ps_pressure": "Working Under Pressure",
+    "ps_adaptability": "Adaptability",
+    "ps_desition_making": "Desition Making"
+  }
+}
