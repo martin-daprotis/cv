@@ -7,9 +7,9 @@ const FirstImpresion = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 100vh;
     width:100%;
-    box-shadow:inset 0 0 0 2000px rgba(17, 17, 17, 0.8);
+    box-shadow:inset 0 0 0 2000px rgba(17, 17, 17, 0.75);
 `
 
 const InfoWrapper= styled.div` 

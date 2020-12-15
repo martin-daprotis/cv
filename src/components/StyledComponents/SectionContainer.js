@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const SectionContainer1 = styled.div`
-  background-color: ${props => props.isDark ? "#624462" : "#d5e9ff"};
+  background-color: ${props => props.isDark ? "#624462" : "#bde0e3"};
   -ms-transform: skewY(-3deg); /* IE 9 */
   transform: skewY(-3deg);
   padding-top:5em;
@@ -19,7 +19,7 @@ const SectionContainer1 = styled.div`
     width: 80px;
     border-bottom-right-radius: 70px;
     background-color: transparent;
-    box-shadow: 0 65px 0 0 ${props => props.isDark ? "#624462" : "#d5e9ff"};  
+    box-shadow: 0 65px 0 0 ${props => props.isDark ? "#624462" : "#bde0e3"};  
   }
 
   &:after {
@@ -32,7 +32,7 @@ const SectionContainer1 = styled.div`
     width: 80px;
     border-top-left-radius: 70px;
     background-color: transparent;
-    box-shadow: 0 -65px 0 0  ${props => props.isDark ? "#624462" : "#d5e9ff"};
+    box-shadow: 0 -65px 0 0  ${props => props.isDark ? "#624462" : "#bde0e3"};
   }
   
   & >div{
@@ -43,7 +43,7 @@ const SectionContainer1 = styled.div`
 `
 
 const SectionContainer2 = styled.div`
-  background-color: ${props => props.isDark ? "#624462" : "#d5e9ff"};
+  background-color: ${props => props.isDark ? "#624462" : "#bde0e3"};
   -ms-transform: skewY(3deg); /* IE 9 */
   transform: skewY(3deg);
   padding: 5em 3em;
@@ -60,7 +60,7 @@ const SectionContainer2 = styled.div`
     width: 80px;
     border-bottom-left-radius: 70px;
     background-color: transparent;
-    box-shadow: 0 65px 0 0  ${props => props.isDark ? "#624462" : "#d5e9ff"};
+    box-shadow: 0 65px 0 0  ${props => props.isDark ? "#624462" : "#bde0e3"};
   }
 
   &:after {
@@ -73,7 +73,7 @@ const SectionContainer2 = styled.div`
     width: 80px;
     border-top-right-radius: 70px;
     background-color: transparent;
-    box-shadow: 0 -65px 0 0  ${props => props.isDark ? "#624462" : "#d5e9ff"};
+    box-shadow: 0 -65px 0 0  ${props => props.isDark ? "#624462" : "#bde0e3"};
   }
   
   & >div{
@@ -84,7 +84,7 @@ const SectionContainer2 = styled.div`
 `
 
 const SectionLastContainer2 = styled.div`
-  background-color: ${props => props.isDark ? "#624462" : "#d5e9ff"};
+  background-color: ${props => props.isDark ? "#624462" : "#bde0e3"};
   -ms-transform: skewY(-3deg); /* IE 9 */
   transform: skewY(-3deg);
   margin-top:5em;
@@ -104,13 +104,13 @@ const SectionLastContainer2 = styled.div`
     width: 80px;
     border-bottom-right-radius: 70px;
     background-color: transparent;
-    box-shadow: 0 65px 0 0  ${props => props.isDark ? "#624462" : "#d5e9ff"};
+    box-shadow: 0 65px 0 0  ${props => props.isDark ? "#624462" : "#bde0e3"};
   }
 
   &:after {
     content: "";
     position: absolute;
-    background-color: ${props => props.isDark ? "#624462" : "#d5e9ff"};
+    background-color: ${props => props.isDark ? "#624462" : "#bde0e3"};
     bottom: -95px;
     left: 0;
     height: 190px;
@@ -131,7 +131,7 @@ const SectionLastContainer2 = styled.div`
 `
 
 // const SectionLastContainer2 = styled.div`
-//   background-color: ${props => props.isDark ? "#624462" : "#d5e9ff"};
+//   background-color: ${props => props.isDark ? "#624462" : "#bde0e3"};
 //   -ms-transform: skewY(3deg); /* IE 9 */
 //   transform: skewY(3deg);
 //   margin-top:5em;
@@ -149,13 +149,13 @@ const SectionLastContainer2 = styled.div`
 //     width: 80px;
 //     border-bottom-left-radius: 70px;
 //     background-color: transparent;
-//     box-shadow: 0 65px 0 0  ${props => props.isDark ? "#624462" : "#d5e9ff"};
+//     box-shadow: 0 65px 0 0  ${props => props.isDark ? "#624462" : "#bde0e3"};
 //   }
 
 //   &:after {
 //     content: "";
 //     position: absolute;
-//     background-color: ${props => props.isDark ? "#624462" : "#d5e9ff"};
+//     background-color: ${props => props.isDark ? "#624462" : "#bde0e3"};
 //     bottom: -30px;
 //     left: 0;
 //     height: 160px;

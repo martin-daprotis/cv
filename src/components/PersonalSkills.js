@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PersonalSkills({ language, t }) {
   const classes = useStyles();
-  const lang = language === "EN" ? SP : EN;
+  const lang = language === "SP" ? SP : EN;
 
   function Item({ panel,title, description }) {
     return (
