@@ -22,8 +22,8 @@
       "email": "mdaprotis@hotmail.com"
     }
   },
-  "summary":"Sumary of Qualifications",
-  "profile": "I am a Computer Systems Engineer graduated from Universidad Nacional del Sur in 2014. Familiarized with a variety of programming languages for web development and embedded systems. I am currently working as a Ssr Front End Developer, nevertheless I have worked as a Sr Full-Stack Developer for more than 6 years on both Back-End and Front-End, gathering requirements, designing UI, developing, testing and debugging our systems.",
+  "summary":"Summary of Qualifications",
+  "profile": "I am a Computer Systems Engineer graduated from Universidad Nacional del Sur in 2014. Familiarized with a variety of programming languages for web development. I am currently working as a Sr Software Engineer specialized in the Javascript environment, although I have worked as a Sr Full-Stack Developer for more than 5 years on both Back-End and Front-End, gathering requirements, designing UI, developing, testing, debugging and maintaining web-based systems.",
   "study": {
     "primary": {
       "from": "",
@@ -63,15 +63,15 @@
   "personal_skills" :[
     {
       "skill":"Communication",
-      "description":"During my work experience as a Full Stack Web Developer I had to meet with the client in order to gather requirements to start the development process of new Systems. Additionally, was responsible for answering client enquiries by phone solving their problems and giving support on systems which I was maintaining."
+      "description":"During my work experience as a Full Stack Web Developer I had to meet with the client in order to gather requirements to start the development process of new Systems. Additionally, I was responsible for answering client enquiries by phone solving their problems and giving support on systems which I was maintaining."
     },
     {
-      "skill":"Responsability",
+      "skill":"Responsibility",
       "description":"I was responsible for developing and maintaining systems with sensible data such as employee salaries or bank transactions systems. These systems were crucial to make the monthly payments of the 4000+ employees of the company."
     },
     {
       "skill":"Teamwork",
-      "description":"Even though I had to work in some cases on my own it is always better to face challenges as a team. For more than 5 year now, I have been part of a development team, in which all members participate in a collaborative way with SCRUM methodologies."
+      "description":"Even though I had to work in some cases on my own it is always better to face challenges as a team. For more than 5 year now, I have been part of a development team, in which all members take part in a collaborative way with SCRUM methodologies."
     },
     {
       "skill":"Adaptability",
@@ -83,8 +83,8 @@
       "from": "2020-09",
       "until": "Present",
       "place": "Bglobal",
-      "position": "Ssr Front-End Developer",
-      "description": "Working on an integration of a headless Magento 2, and a WordPress webpage into a NextJs based website using React Storefront with a custom connector in order to consume the GraphQL Magento 2 API. We are also implementing inside this page an institutional page in the same site.",
+      "position": "Sr Front-End Developer",
+      "description": "Worked on an integration of a headless Magento 2, and a WordPress webpage into a NextJs based website using React Storefront with a custom connector in order to consume the GraphQL Magento 2 API. We carried out session management with REDIS using its REST API through ExpressJs. The user authentication was achieved using Auth0 through its REST API aiming to design our own login interface.",
       "status": 1
     },
     {
