@@ -11,6 +11,7 @@ import {
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import EN from "../lang_source/EN.json";
 import SP from "../lang_source/SP.json";
+import { v4 as uuidv4 } from "uuid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,15 +32,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ControlledExpansionPanels({ language, t }) {
+export default function ControlledExpansionPanels({
+  language,
+  t,
+  en = EN,
+  sp = SP,
+}) {
   const classes = useStyles();
-  const lang = language === "EN" ? EN : SP;
+  const lang = language === "EN" ? en : sp;
 
   function WorkItem({ panel, place, from, until, pos, description }) {
     return (
       <Accordion
         TransitionProps={{
-          timeout: 600
+          timeout: 600,
         }}
       >
         <AccordionSummary
@@ -82,12 +88,14 @@ export default function ControlledExpansionPanels({ language, t }) {
           </Grid>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography variant="subtitle1">{description.split('|').map(line => 
-              <>
+          <Typography variant="subtitle1">
+            {description.split("|").map((line) => (
+              <p key={uuidv4()}>
                 {line}
-                <br/>
-              </>
-            )}</Typography>
+                <br />
+              </p>
+            ))}
+          </Typography>
         </AccordionDetails>
       </Accordion>
     );
@@ -107,7 +115,7 @@ export default function ControlledExpansionPanels({ language, t }) {
       {lang.work.map((k, i) => {
         return (
           <WorkItem
-            key={`work_${i}`}
+            key={uuidv4()}
             place={k.place}
             from={k.from}
             until={k.until}
