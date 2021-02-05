@@ -7,12 +7,12 @@ import {
   Typography,
   Box,
   Grid,
-  Collapse
+  Collapse,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import EN from "../lang_source/EN.json";
 import SP from "../lang_source/SP.json";
-import { v4 as uuidv4 }from 'uuid'
+import { v4 as uuidv4 } from "uuid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,15 +33,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PersonalSkills({ language, t }) {
+export default function PersonalSkills({ language, t, sp = SP, en = EN }) {
   const classes = useStyles();
-  const lang = language === "SP" ? SP : EN;
+  const lang = language === "SP" ? sp : en;
 
-  function Item({ panel,title, description }) {
+  function Item({ panel, title, description }) {
     return (
       <Accordion
         TransitionProps={{
-          timeout: 600
+          timeout: 600,
         }}
       >
         <AccordionSummary
@@ -55,14 +55,14 @@ export default function PersonalSkills({ language, t }) {
             justify="flex-start"
             alignItems="center"
           >
-            <Typography variant='h6' color="textSecondary">
+            <Typography variant="h6" color="textSecondary">
               {title}
             </Typography>
           </Grid>
         </AccordionSummary>
         <AccordionDetails>
-            <Typography variant="subtitle1">{description}</Typography>
-        </AccordionDetails >
+          <Typography variant="subtitle1">{description}</Typography>
+        </AccordionDetails>
       </Accordion>
     );
   }

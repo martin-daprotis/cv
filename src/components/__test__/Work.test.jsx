@@ -1,13 +1,8 @@
-
 import React from 'react'
-import { render, fireEvent, cleanup, waitFor, getByTestId ,logDOM} from '@testing-library/react'
+import { render, cleanup} from '@testing-library/react'
 import '@testing-library/jest-dom'
 import '@testing-library/jest-dom/extend-expect'
 import {
-  setTranslations,
-  setDefaultLanguage,
-  setLanguageCookie,
-  setLanguage,
   translate,
 } from "react-switch-lang";
 
@@ -34,28 +29,28 @@ const mockWorkSP = {
       "status": 1
     }]};
 
-    afterEach(cleanup)
+afterEach(cleanup)
 
 describe('Spanish language', () => {
-  it('renders work place ', async () => {
+  it('render period ', () => {
     const RenderHOC = translate(({t}) => <Work sp={mockWorkSP} en={mockWorkEN} t={t} language='EN'/>);
     const {getByText} = render(<RenderHOC/>)
     expect(getByText('2020-09 - 2020-10')).toBeInTheDocument();
   })
   
-  it('renders work place ', async () => {
+  it('render work place ', () => {
     const RenderHOC = translate(({t}) => <Work sp={mockWorkSP} en={mockWorkEN} t={t} language='SP'/>);
     const {getByText} = render(<RenderHOC/>)
     expect(getByText('Lugar de Trabajo')).toBeInTheDocument();
   })
 
-  it('renders position ', async () => {
+  it('render position ', () => {
     const RenderHOC = translate(({t}) => <Work sp={mockWorkSP} en={mockWorkEN} t={t} language='SP'/>);
     const {getByText} = render(<RenderHOC/>)
     expect(getByText('Desarrollador Front End Sr')).toBeInTheDocument();
   })
 
-  it('renders description ', async () => {
+  it('render description ', () => {
     const RenderHOC = translate(({t}) => <Work sp={mockWorkSP} en={mockWorkEN} t={t} language='SP'/>);
     const {getByText} = render(<RenderHOC/>)
     expect(getByText('Descripción Laboral')).toBeInTheDocument();
@@ -63,25 +58,25 @@ describe('Spanish language', () => {
 })
 
 describe('English language', () => {
-  it('renders work place ', async () => {
+  it('render period ', () => {
     const RenderHOC = translate(({t}) => <Work sp={mockWorkSP} en={mockWorkEN} t={t} language='EN'/>);
     const {getByText} = render(<RenderHOC/>)
     expect(getByText('2020-09 - 2020-10')).toBeInTheDocument();
   })
 
-  it('renders work place ', async () => {
+  it('render work place ', () => {
     const RenderHOC = translate(({t}) => <Work sp={mockWorkSP} en={mockWorkEN} t={t} language='EN'/>);
     const {getByText} = render(<RenderHOC/>)
     expect(getByText('Work Place')).toBeInTheDocument();
   })
 
-  it('renders position ', async () => {
+  it('render position ', () => {
     const RenderHOC = translate(({t}) => <Work sp={mockWorkSP} en={mockWorkEN} t={t} language='EN'/>);
     const {getByText} = render(<RenderHOC/>)
     expect(getByText('Sr Front-End Developer')).toBeInTheDocument();
   })
 
-  it('renders description ', async () => {
+  it('render description ', () => {
     const RenderHOC = translate(({t}) => <Work sp={mockWorkSP} en={mockWorkEN} t={t} language='EN'/>);
     const {getByText} = render(<RenderHOC/>)
     expect(getByText('Work Description')).toBeInTheDocument();
