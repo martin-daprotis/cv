@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box, Typography } from "@material-ui/core";
 // Import react-circular-progressbar module and styles
@@ -14,40 +14,32 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AnimatedCircularPB = ({value,startAnimation}) => {
-
+const AnimatedCircularPB = ({ value, startAnimation }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    let timer=null;
+    let timer = null;
     if (progress < value && startAnimation) {
       timer = setTimeout(() => {
         setProgress((oldProgress) => {
-            return Math.min(oldProgress + 3,value);
+          return Math.min(oldProgress + 3, value);
         });
       }, 150);
     }
 
-    if(!startAnimation){
-      setProgress(0)
+    if (!startAnimation) {
+      setProgress(0);
     }
 
     return () => {
       clearTimeout(timer);
     };
-     
-  }, [progress,startAnimation]);
+  }, [progress, startAnimation, value]);
 
+  return <CircularProgressbar value={progress} text={`${progress}%`} />;
+};
 
-  return <CircularProgressbar 
-          value={progress}
-          text={`${progress}%`}
-          />
-
-}
-
-
-export default function Circular({ t, elems,startAnimation }) {
+export default function Circular({ t, elems, startAnimation }) {
   const classes = useStyles();
 
   return (

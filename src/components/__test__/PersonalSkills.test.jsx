@@ -62,3 +62,9 @@ describe('English language default languages', () => {
     expect(getByText(/is mandatory/i)).toBeInTheDocument();
   })
 })
+
+it('matches snapshot',  () => {
+  const RenderHOC = translate(({t}) => <PersonalSkills t={t} language='EN'/>);
+const wrapper = render(<RenderHOC/>)
+expect(wrapper.asFragment()).toMatchSnapshot()
+})

@@ -34,7 +34,7 @@ export default function Knowledge({ t }) {
     if (scrollTop < 1000 && start) {
       setStart(false);
     }
-  }, [scrollTop]);
+  }, [scrollTop, start]);
 
   return (
     <div className={classes.root}>

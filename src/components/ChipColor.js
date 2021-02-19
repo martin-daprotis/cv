@@ -1,31 +1,28 @@
-import React from "react";
-import { makeStyles, darken } from "@material-ui/core/styles";
-import { Chip, Avatar } from "@material-ui/core";
+import React from 'react'
+import { makeStyles, darken } from '@material-ui/core/styles'
+import { Chip, Avatar } from '@material-ui/core'
 
 const classesChip = makeStyles({
   avatar: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
     backgroundColor: (props) => darken(props.bgColor, 0.5),
   },
   icon: {
-    color: "#FFFFFF",
+    color: '#FFFFFF',
   },
-});
+})
 
 export default function BorderLinearProgress({ ...props }) {
-  const classes = classesChip(props);
-  const itemIcon = props.icon;
+  const classes = classesChip(props)
+  const itemIcon = props.icon
   return (
     <Chip
       avatar={
         <Avatar>
-          {itemIcon === "" ? (
+          {itemIcon === '' ? (
             props.title
           ) : (
-            <span
-              className={itemIcon}
-              style={{ fontSize: "1.3em", color: "#FFF" }}
-            ></span>
+            <span className={itemIcon} style={{ fontSize: '1.3em', color: '#FFF' }}></span>
           )}
         </Avatar>
       }
@@ -38,5 +35,5 @@ export default function BorderLinearProgress({ ...props }) {
       size="small"
       variant="outlined"
     />
-  );
+  )
 }

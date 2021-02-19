@@ -41,3 +41,8 @@ it('render correctly ', () => {
   expect(wrapper.asFragment()).toMatchSnapshot()
 })
 
+it('matches snapshot',  () => {
+  const RenderHOC = translate(({t}) => <Knowledge  t={t}/>);
+  const wrapper = render(<RenderHOC/>)
+  expect(wrapper.asFragment()).toMatchSnapshot()
+})

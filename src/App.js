@@ -1,19 +1,19 @@
-import React, { useRef, useState, useEffect } from "react";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { CssBaseline, Box, makeStyles, Container } from "@material-ui/core";
-import NavBar from "./components/NavBar";
-import AppThemeOptions from "./components/theme";
-import Presentation from "./components/Presentation.js";
-import PersonalSkills from "./components/PersonalSkills.js";
-import Knowledge from "./components/Knowledge.js";
-import Work from "./components/Work.js";
+import React, { useRef, useState, useEffect } from 'react'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { CssBaseline, Box, makeStyles, Container } from '@material-ui/core'
+import NavBar from './components/NavBar'
+import AppThemeOptions from './components/theme'
+import Presentation from './components/Presentation.js'
+import PersonalSkills from './components/PersonalSkills.js'
+import Knowledge from './components/Knowledge.js'
+import Work from './components/Work.js'
 import {
   SectionContainer1,
   SectionLastContainer2,
-} from "./components/StyledComponents/SectionContainer";
+} from './components/StyledComponents/SectionContainer'
 
-import FirstImpression from "./components/FirstImpression";
-import { AppTheme } from "./components/types";
+import FirstImpression from './components/FirstImpression'
+import { AppTheme } from './components/types'
 
 // Translation Higher Order Component
 import {
@@ -22,49 +22,49 @@ import {
   setLanguageCookie,
   setLanguage,
   translate,
-} from "react-switch-lang";
-import EN from "./lang_source/EN.json";
-import SP from "./lang_source/SP.json";
+} from 'react-switch-lang'
+import EN from './lang_source/EN.json'
+import SP from './lang_source/SP.json'
 
 // Do this two lines only when setting up the application
-setTranslations({ EN, SP });
-setDefaultLanguage("EN");
+setTranslations({ EN, SP })
+setDefaultLanguage('EN')
 
 // If you want to remember selected language
-setLanguageCookie();
+setLanguageCookie()
 
 const useStyles = makeStyles((theme) => ({
   topic: {
-    margin: "auto",
-    paddingTop: "100px",
+    margin: 'auto',
+    paddingTop: '100px',
   },
-}));
+}))
 
 function App({ toggleTheme, theme, t }) {
-  const classes = useStyles();
-  const muiTheme = createMuiTheme(AppThemeOptions[theme]);
+  const classes = useStyles()
+  const muiTheme = createMuiTheme(AppThemeOptions[theme])
 
-  const [lang, setLang] = useState("EN");
+  const [lang, setLang] = useState('EN')
 
   const handleClickLang = (e) => {
-    setLang(lang === "SP" ? "EN" : "SP");
-  };
+    setLang(lang === 'SP' ? 'EN' : 'SP')
+  }
 
   useEffect(() => {
-    setLanguageCookie(lang);
-    setLanguage(lang);
-  }, [lang]);
+    setLanguageCookie(lang)
+    setLanguage(lang)
+  }, [lang])
 
-  const [tabValue, setValue] = React.useState(0);
-  const topics = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const [tabValue, setValue] = React.useState(0)
+  const topics = [useRef(null), useRef(null), useRef(null), useRef(null)]
 
   const handleClickTab = (event, newValue) => {
     topics[newValue].current.scrollIntoView({
-      block: "start",
-      behavior: "smooth",
-    });
-    setValue(newValue);
-  };
+      block: 'start',
+      behavior: 'smooth',
+    })
+    setValue(newValue)
+  }
 
   return (
     <MuiThemeProvider theme={muiTheme}>
@@ -80,11 +80,11 @@ function App({ toggleTheme, theme, t }) {
         <Container>
           <Box justifyContent="center">
             <Box className={classes.topic} ref={topics[0]}>
-              <Presentation t={t} />
+              <Presentation t={t} language={lang} />
             </Box>
             <Box className={classes.topic} ref={topics[1]}>
               <SectionContainer1 isDark={theme !== AppTheme.LIGHT}>
-                <Knowledge t={t} />
+                <Knowledge t={t} language={lang} />
               </SectionContainer1>
             </Box>
             <Box className={classes.topic} ref={topics[2]}>
@@ -99,7 +99,7 @@ function App({ toggleTheme, theme, t }) {
         </Container>
       </CssBaseline>
     </MuiThemeProvider>
-  );
+  )
 }
 
-export default translate(App);
+export default translate(App)

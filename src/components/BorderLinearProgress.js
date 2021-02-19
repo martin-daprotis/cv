@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 
@@ -23,30 +23,29 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const BorderLinearProgress = ({ startAnimation,value,...props }) => {
+const BorderLinearProgress = ({ startAnimation, value, ...props }) => {
   const classes = useStyles();
   const classesLinear = StyledLinearProgress(props);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    let timer=null;
+    let timer = null;
     if (progress < value && startAnimation) {
       timer = setTimeout(() => {
         setProgress((oldProgress) => {
-            return Math.min(oldProgress + 3,value);
+          return Math.min(oldProgress + 3, value);
         });
       }, 150);
     }
 
-    if(!startAnimation){
-      setProgress(0)
+    if (!startAnimation) {
+      setProgress(0);
     }
 
     return () => {
       clearTimeout(timer);
     };
-     
-  }, [progress,startAnimation]);
+  }, [progress, startAnimation, value]);
 
   return (
     <div className={` ${classes.root}`}>
@@ -61,6 +60,6 @@ const BorderLinearProgress = ({ startAnimation,value,...props }) => {
       />
     </div>
   );
-}
+};
 
 export default BorderLinearProgress;

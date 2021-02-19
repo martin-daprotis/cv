@@ -1,34 +1,25 @@
-import React,{useState,useLayoutEffect} from "react";
-import Toolbar from "@material-ui/core/Toolbar";
-import AppBar from "@material-ui/core/AppBar";
-import {
-  makeStyles,
-  Icon,
-  Tab,
-  Tabs,
-  Box,
-  IconButton,
-  Avatar,
-  Grid,
-} from "@material-ui/core";
+import React, { useState, useLayoutEffect } from 'react'
+import Toolbar from '@material-ui/core/Toolbar'
+import AppBar from '@material-ui/core/AppBar'
+import { makeStyles, Icon, Tab, Tabs, Box, IconButton, Avatar, Grid } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
   container: {
-    margin: "auto",
-    maxWidth: "70%",
+    margin: 'auto',
+    maxWidth: '70%',
   },
   topic: {
-    margin: "auto",
-    paddingTop: "100px",
+    margin: 'auto',
+    paddingTop: '100px',
   },
   small: {
     width: theme.spacing(2.5),
     height: theme.spacing(2.5),
   },
-}));
+}))
 
 export default function NavBar({
   t,
@@ -37,35 +28,35 @@ export default function NavBar({
   handleClickTab,
   tabValue,
 }) {
-  const classes = useStyles();
-  const [themeType, setThemeType] = React.useState(true);
-  const [icon, setIcon] = React.useState("brightness_2");
-  const [scrollTop, setScrollTop] = useState(window.pageYOffset);
+  const classes = useStyles()
+  const [themeType, setThemeType] = React.useState(true)
+  const [icon, setIcon] = React.useState('brightness_2')
+  const [scrollTop, setScrollTop] = useState(window.pageYOffset)
 
   const handleClick = (e) => {
-    setThemeType(!themeType);
-    onThemeTypeSwitch();
-    setIcon(icon === "brightness_7" ? "brightness_2" : "brightness_7");
-  };
+    setThemeType(!themeType)
+    onThemeTypeSwitch()
+    setIcon(icon === 'brightness_7' ? 'brightness_2' : 'brightness_7')
+  }
 
-  
   useLayoutEffect(() => {
-    const onScroll = () =>  {
-      let currentPosition = window.pageYOffset; // or use document.documentElement.scrollTop;
-      setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
+    const onScroll = () => {
+      let currentPosition = window.pageYOffset // or use document.documentElement.scrollTop;
+      setScrollTop(currentPosition <= 0 ? 0 : currentPosition)
     }
-    window.addEventListener("scroll", onScroll);
-    return window.addEventListener("scroll", onScroll);
-  }, [scrollTop]);
+    window.addEventListener('scroll', onScroll)
+    return window.addEventListener('scroll', onScroll)
+  }, [scrollTop])
 
   return (
     <div>
-      <AppBar style={{backgroundColor: `rgba(0,151,167,${(scrollTop-450)/100})`}}>
+      <AppBar style={{ backgroundColor: `rgba(0,151,167,${(scrollTop - 450) / 100})` }}>
         <Toolbar varian="condense" className={classes.titlebar}>
           <Grid container direction="row" justify="space-between">
             <Grid item xs={9}>
               <Box display="flex" justifyContent="flex-start">
                 <Tabs
+                  data-testid="navbarTab"
                   value={tabValue}
                   indicatorColor="secondary"
                   onChange={handleClickTab}
@@ -73,24 +64,24 @@ export default function NavBar({
                   scrollButtons="auto"
                   aria-label="scrollable auto tabs example"
                 >
-                  <Tab label={t("navbar.profile")} />
-                  <Tab label={t("navbar.knowledge")} />
-                  <Tab label={t("navbar.personal_skills")} />
-                  <Tab label={t("navbar.work")} />
+                  <Tab label={t('navbar.profile')} />
+                  <Tab label={t('navbar.knowledge')} />
+                  <Tab label={t('navbar.personal_skills')} />
+                  <Tab label={t('navbar.work')} />
                 </Tabs>
               </Box>
             </Grid>
             <Grid item xs={3}>
               <Box display="flex" justifyContent="flex-end">
-                <IconButton onClick={handleClickLang}>
+                <IconButton onClick={handleClickLang} data-testid="btnLang">
                   <Avatar className={classes.small}>
                     <Box fontWeight="fontWeightBold" fontSize={12} m={1}>
-                      {t("lang") === "SP" ? "EN" : "SP"}
+                      {t('lang') === 'SP' ? 'EN' : 'SP'}
                     </Box>
                   </Avatar>
                 </IconButton>
-                <IconButton onClick={handleClick}>
-                  <Icon style={{color:"#FFF"}} >{icon}</Icon>
+                <IconButton onClick={handleClick} data-testid="btnTheme">
+                  <Icon style={{ color: '#FFF' }}>{icon}</Icon>
                 </IconButton>
               </Box>
             </Grid>
@@ -98,5 +89,5 @@ export default function NavBar({
         </Toolbar>
       </AppBar>
     </div>
-  );
+  )
 }

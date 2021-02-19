@@ -27,3 +27,9 @@ it('should render percentage ', () => {
   const {getByText} = render(<RenderHOC/>)
   expect(getByText('100%')).toBeInTheDocument();
 })
+
+it('matches snapshot',  () => {
+  const RenderHOC = translate(({t}) =><FormRow  items={mockSkills} t={t} startAnimation='true'/>);
+  const wrapper = render(<RenderHOC/>)
+  expect(wrapper.asFragment()).toMatchSnapshot()
+})

@@ -11,12 +11,11 @@ import {
   ListItemText,
   ListItemAvatar,
   Divider,
-  Chip,
   Card,
   CardHeader,
   CardContent,
   CardActions,
-  Tooltip
+  Tooltip,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import image from "../media/pic4.png";
@@ -105,19 +104,16 @@ function Profile({ t }) {
                   color="textSecondary"
                   fontWeight="fontWeightBold"
                 >
-                   {t("summary")}
+                  {t("summary")}
                 </Typography>
               }
             ></CardHeader>
             <CardContent>
-              <Typography
-                className={classes.pos}
-                variant="subtitle1"
-              >
+              <Typography className={classes.pos} variant="subtitle1">
                 {t("profile")}
               </Typography>
             </CardContent>
-            <CardContent style={{padding:0}}>
+            <CardContent style={{ padding: 0 }}>
               <List className={classes.divisor}>
                 <ListItem>
                   <ListItemAvatar>
@@ -125,7 +121,7 @@ function Profile({ t }) {
                       <Icon>email</Icon>
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText primary="mdaprotis@hotmail.com" />
+                  <ListItemText primary={t("personal_data.contact.email")} />
                 </ListItem>
                 <Divider variant="inset" component="li" />
                 <ListItem>
