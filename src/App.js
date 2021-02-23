@@ -14,24 +14,16 @@ import {
 
 import FirstImpression from './components/FirstImpression'
 import { AppTheme } from './components/types'
+import Cookies from 'js-cookie'
 
 // Translation Higher Order Component
-import {
-  setTranslations,
-  setDefaultLanguage,
-  setLanguageCookie,
-  setLanguage,
-  translate,
-} from 'react-switch-lang'
+import { setTranslations, setDefaultLanguage, setLanguage, translate } from 'react-switch-lang'
 import EN from './lang_source/EN.json'
 import SP from './lang_source/SP.json'
 
 // Do this two lines only when setting up the application
 setTranslations({ EN, SP })
 setDefaultLanguage('EN')
-
-// If you want to remember selected language
-setLanguageCookie()
 
 const useStyles = makeStyles((theme) => ({
   topic: {
@@ -44,15 +36,21 @@ function App({ toggleTheme, theme, t }) {
   const classes = useStyles()
   const muiTheme = createMuiTheme(AppThemeOptions[theme])
 
-  const [lang, setLang] = useState('EN')
+  const [lang, setLang] = useState(Cookies.get('lang') || 'EN')
 
   const handleClickLang = (e) => {
     setLang(lang === 'SP' ? 'EN' : 'SP')
+    Cookies.set('lang', lang === 'SP' ? 'EN' : 'SP')
   }
 
   useEffect(() => {
-    setLanguageCookie(lang)
-    setLanguage(lang)
+    const selectedLang = Cookies.get('lang')
+    if (selectedLang) {
+      setLanguage(selectedLang)
+    } else {
+      setLanguage(lang)
+      Cookies.set('lang', lang)
+    }
   }, [lang])
 
   const [tabValue, setValue] = React.useState(0)

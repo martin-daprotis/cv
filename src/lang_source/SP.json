@@ -78,30 +78,32 @@
     }
   ],
   "work": [
-      {
-        "from": "2020-09",
-        "until": "Presente",
-        "place": "Bglobal",
-        "position": "Ssr Front-End Developer",
-        "description": "Actualmente tabajando en la integración de un headless Magento 2, como tambíen de un headless WordPress dentro de un sitio web basado en NextJs utilizando el Framework de React Storefront con un connector customizado para poder consumir la API de Magento 2 por Graphql. Adicional a esto estamos implementando dentro de este sitio una web institucional.",
-        "status": 1
-      },
-      {
-        "from": "2015-01",
-        "until": "2020-09",
-        "place": "Cooperativa Obrera",
-        "position": "Sr Full-Stack Developer",
-        "description": "Desarrolle una gran variedad de sistemas internos a la empresa basados en web, donde fui responsable del proceso completo de desarrollo de los mismos. | Estos sistemas estaban contenidos en un portal Intranet usado por una amplia cantidad de empleados. Trabajamos con Continuous Integration y Continuos Deployment en server propios de la empresa. Todos los desarrollos fueron llevados a cabo en ambientes Dockerizados y aplicando metodologias SCRUM. | Por más de 5 años he trabajo con un LAMP stack usando CodeIgniter (MVC) como framework principal.| |>  Back End: Inicialmente utilizado PHP 5.6 y luego realizamos la migración a PHP 7.0 en todos nuestros sistemas. | |>  Front End: (Single Page Websites) utilizamos tecnologías como Javascript, JQuery, AJAX, JSON, ES6+ siempre intentando optimizar con lazy loading y otras técnicas a la vez que se intentaba reducir la cantidad de http requests. | |>   UI: Para el caso de interfaz gráfica creamos nuestros propios elementos estilizados con CSS, SASS, Flex Box y Grid, asi evitando depender de librerias de terceros. | |>  DB: Diseñamos y optimizamos MySQL queries con operaciones transaccionales, generando triggers and stored procedures solo cunado era necesario. || Mas tarde pasamos a utilizar MERN (MySQL y Mongo DB, ExpressJs, ReactJs, NodeJs) stack aplicando TDD al proceso con JEST and RTL.",
-        "status": 1
-      },
-      {
-        "from": "2014-07",
-        "until": "2015-01",
-        "place": "ALAS Ing.",
-        "position": "Script Writer",
-        "description": "En este proyecto de 6 meses estuve a cargo de la migración de la base de datos de Smart Plant Foundation para la empresa PROFERTIL. La base de datos era una base Oracle y la migración se llevó a cabo con scripts para la migración y el control de aserción del proceso, cumpliendo con los requisitos impuestos por los estandares ISO-9001.",
-        "status": 1
-      }
+    {
+      "from": "Sept 2020",
+      "until": "Present",
+      "place": "BGLOBAL, Client: LA NACION Argentina",
+      "position": "Sr Front-End Engineer",
+      "description": "• Llevé a cabo la integración de un headless Magento 2, un sitio de WordPress y una web de servicio de subscripciones en un único sitio web basado en NextJs. Consumiendo los diferentes contenidos por medio de GraphQL y REST API.||• Implementé el mantenimiento de sesión de usuarios con REDIS y la autenticación de los mismos con Auth0 APIs a travez de una interfaz NodeJs/ExpressJs REST API. ||• Desarrollé contenido de Front-End con ReactJS (hooks y functional components), Redux, Redux Thunk, Axios, Material UI y Styled Components. ||• Llevé a cabo Test Unitarios y de Integración con JEST y React Testing Library. ||• Aplicamos control de versiones con el flujo de trabajo GitFlow y aporté PR reviews a mis pares.||• Tuve la oportunidad de asesorar en temas referidos a ReactJs y buenas prácticas a colegas Juniors.",
+      "webImg": "https://media.giphy.com/media/1P00ZTh1zpww2bnT2v/source.gif",
+      "link": "https://mundohafele.com/producto/9053",
+      "status": 1
+    },
+    {
+      "from": "Ene 2015",
+      "until": "Sept 2020",
+      "place": "COOPERATIVA OBRERA LTDA Argentina",
+      "position": "Sr Full-Stack Engineer",
+      "description": "Desarrollé una amplia variedad de sistemas internos de la empresa basados en web, los cuales eran utilizados diariamente por los distintos empleados. |Trabajamos con CI/CD en servidores propios. Todo el desarrollo se llevó a cabo utilizado un ambiente Dockerizado| y aplicando metodologías Ágiles como SCRUM. | Por más de 5 años trabajé con un stack LAMP utilizando CodeIgniter (MVC) como framework principal: ||•  Back End: Inicialmente utilizabamos PHP 5.6 y luego hicimos la transición a PHP 7.0 en todos nuestros sistemas. |•  Front End: (Single Page Websites) utilizando Javascript, JQuery, AJAX, JSON, ES6+ siempre intentando optimizar con |>lazy loading y reduciendo la cantidad de http requests a demanda. |•   UI: Creamos nuestro propio framework CSS similar a Atomic CSS evitanto dependencias de terceros. |•  DB: Diseñamos y optimizamos las queries de MySQL con operaciones transaccionales, generando triggers y stored procedures cuando era necesario. || Luego pasamos a un stack MERN (MySQL, Mongo DB, ExpressJs, ReactJs, NodeJs) aplicando TDD al proceso con JEST y RTL cuando era posible.",
+      "status": 1
+    },
+    {
+      "from": "Jul 2014",
+      "until": "Ene 2015",
+      "place": "ALAS Ingeniería",
+      "position": "Script Writer",
+      "description": "En este proyecto de 6 meses estuve a cargo de la migración de la base de datos Oracle de Smart Plant Foundation para la empresa PROFERTIL. La migración se llevo a cabo con scripts para migrarla y controlar la correctitud del proceso cumpliendo con los requerimientos necesarios impuestos por el estandar ISO-9001.",
+      "status": 1
+    }
   ],
   "knowledge": {
     "work_related": [

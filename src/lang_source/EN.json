@@ -79,25 +79,27 @@
   ],
   "work": [
     {
-      "from": "2020-09",
+      "from": "Sept 2020",
       "until": "Present",
-      "place": "Bglobal",
-      "position": "Sr Front-End Developer",
-      "description": "Worked on an integration of a headless Magento 2, and a WordPress webpage into a NextJs based website using React Storefront with a custom connector in order to consume the GraphQL Magento 2 API. We carried out session management with REDIS using its REST API through ExpressJs. The user authentication was achieved using Auth0 through its REST API aiming to design our own login interface.",
+      "place": "BGLOBAL, Client: LA NACION Argentina",
+      "position": "Sr Front-End Engineer",
+      "description": "• Carried out Integration of a headless Magento 2, a WordPress webpage and an e-commerce subscription service website into a single NextJs-based website consuming these different contents through GraphQL and REST API.||• Implemented user session maintenance with REDIS and user authentication with Auth0 APIs through NodeJs/ExpressJs REST API interface. ||• Developed Front-End content with ReactJS (hooks and functional components), Redux, Redux Thunk, Axios, Material UI and Styled Components. ||• Carried out Unit Tests and Integration Tests with JEST and React Testing Library. ||• Applied Version Control with GitFlow and contributed with PR reviews.||• Carried out React and best practices mentorship for Junior colleagues.",
+      "webImg": "https://media.giphy.com/media/1P00ZTh1zpww2bnT2v/source.gif",
+      "link": "https://mundohafele.com/producto/9053",
       "status": 1
     },
     {
-      "from": "2015-01",
-      "until": "2020-09",
-      "place": "Cooperativa Obrera",
-      "position": "Sr Full-Stack Developer",
-      "description": "Developed a vast variety of systems, taking responsibility of the full process of internal websites |contained in an Intranet portal used by the entire company. We worked with Continuous Integration and | Deployment on internal servers, all the development is carried out in a Dockerized environment | applying SCRUM methodology. | For more than 5 years I have been working with a LAMP stack using CodeIgniter (MVC) as a main | framework: | |>  Back End: Initially using PHP 5.6 and then making a transition to PHP 7.0 in all of our systems. | |>  Front End: (Single Page Websites) using Javascript, JQuery, AJAX, JSON, ES6+ always optimizing the | Front-End with lazy loading and reducing the amount of http requests on demand. | |>   UI: own styled elements using CSS and SASS avoiding the dependencies of third party’s libraries. | |>  DB: design and optimize MySQL queries with transactional operations, generating triggers and stored | procedures in necessary cases. || Later we moved on to a MERN (MySQL and Mongo DB, ExpressJs, ReactJs, NodeJs) stack applying TDD to the process with JEST and RTL.",
+      "from": "Jan 2015",
+      "until": "Sept 2020",
+      "place": "COOPERATIVA OBRERA LTDA Argentina",
+      "position": "Sr Full-Stack Engineer",
+      "description": "Developed a vast variety of web-based internal systems, taking full responsibility for them. We worked with CI/CD | on internal servers, the full development process was carried out in a Dockerized environment | applying SCRUM methodology. | For more than 5 years I worked with a LAMP stack using CodeIgniter (MVC) as a main | framework: |•  Back End: Initially using PHP 5.6 and then making a transition to PHP 7.0 in all of our systems. |•  Front End: (Single Page Websites) using Javascript, JQuery, AJAX, JSON, ES6+ always trying to optimize it |> with lazy loading and reducing the amount of http requests on demand. |•   UI: Created our own CSS framework similar to Atomic CSS thus avoiding the dependencies of third party libraries. |•  DB: designed and optimized MySQL queries with transactional operations, generating triggers and stored procedures when necessary. || Later we moved on to a MERN (MySQL and Mongo DB, ExpressJs, ReactJs, NodeJs) stack applying TDD to the process with JEST and RTL when possible.",
       "status": 1
     },
     {
-      "from": "2014-07",
-      "until": "2015-01",
-      "place": "ALAS Ing.",
+      "from": "Jul 2014",
+      "until": "Jan 2015",
+      "place": "ALAS Ingenieria",
       "position": "Script Writer",
       "description": "In this 6-month project, I was in charge of the migration of the Smart Plant Foundation database for PROFERTIL . The database was an Oracle DB and the migration was carried out with scripts to migrate and control the assertion of the process, fulfilling the necessary requirements to meet ISO-9001 standads.",
       "status": 1
