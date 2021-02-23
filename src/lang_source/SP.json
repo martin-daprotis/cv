@@ -70,13 +70,13 @@
     },
     {
       "skill":"Trabajo en equipo",
-      "description":"Aunque he tenido que trabajar algunas veces de forma particular siempre es mejor participar en el desarrollo junto a un equipo. Por más de 5 años, he formado parte de equipos de desarrollo en el cual he podido colaborar de forma activa aplicando metodologías ágiles como SCRUM.."
+      "description":"Aunque he tenido que trabajar algunas veces de forma particular siempre es mejor participar en el desarrollo junto a un equipo. Por más de 6 años, he formado parte de equipos de desarrollo en el cual he podido colaborar de forma activa aplicando metodologías ágiles como SCRUM.."
     },
     {
       "skill":"Adaptabilidad",
       "description":"Esta habilidad es sumamente necesaria para poder trabajar en el desarrollo web. A menudo cuando uno se encuentra con nuevos desafíos es necesario investigar e incorporar conocimientos sobre algúna tecnología o libraría nueva y aplicar los mismos cuando sea adecuado. Para esto es necesario adaptarse rápidamente a los cambios de tecnología constantes."
     }
-  ],
+  ], 
   "work": [
     {
       "from": "Sept 2020",
@@ -84,7 +84,7 @@
       "place": "BGLOBAL, Client: LA NACION Argentina",
       "position": "Sr Front-End Engineer",
       "description": "• Llevé a cabo la integración de un headless Magento 2, un sitio de WordPress y una web de servicio de subscripciones en un único sitio web basado en NextJs. Consumiendo los diferentes contenidos por medio de GraphQL y REST API.||• Implementé el mantenimiento de sesión de usuarios con REDIS y la autenticación de los mismos con Auth0 APIs a travez de una interfaz NodeJs/ExpressJs REST API. ||• Desarrollé contenido de Front-End con ReactJS (hooks y functional components), Redux, Redux Thunk, Axios, Material UI y Styled Components. ||• Llevé a cabo Test Unitarios y de Integración con JEST y React Testing Library. ||• Aplicamos control de versiones con el flujo de trabajo GitFlow y aporté PR reviews a mis pares.||• Tuve la oportunidad de asesorar en temas referidos a ReactJs y buenas prácticas a colegas Juniors.",
-      "webImg": "https://media.giphy.com/media/1P00ZTh1zpww2bnT2v/source.gif",
+      "webImg": "bonvivir.mov",
       "link": "https://mundohafele.com/producto/9053",
       "status": 1
     },

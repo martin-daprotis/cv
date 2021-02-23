@@ -58,7 +58,7 @@
         "status": 0
       }
     ]
-  },
+  }, 
   "personal_skills" :[
     {
       "skill":"Communication",
@@ -70,7 +70,7 @@
     },
     {
       "skill":"Teamwork",
-      "description":"Even though I had to work in some cases on my own it is always better to face challenges as a team. For more than 5 year now, I have been part of a development team, in which all members take part in a collaborative way with SCRUM methodologies."
+      "description":"Even though I had to work in some cases on my own it is always better to face challenges as a team. For more than 6 year now, I have been part of a development team, in which all members take part in a collaborative way with SCRUM methodologies."
     },
     {
       "skill":"Adaptability",
@@ -84,7 +84,7 @@
       "place": "BGLOBAL, Client: LA NACION Argentina",
       "position": "Sr Front-End Engineer",
       "description": "• Carried out Integration of a headless Magento 2, a WordPress webpage and an e-commerce subscription service website into a single NextJs-based website consuming these different contents through GraphQL and REST API.||• Implemented user session maintenance with REDIS and user authentication with Auth0 APIs through NodeJs/ExpressJs REST API interface. ||• Developed Front-End content with ReactJS (hooks and functional components), Redux, Redux Thunk, Axios, Material UI and Styled Components. ||• Carried out Unit Tests and Integration Tests with JEST and React Testing Library. ||• Applied Version Control with GitFlow and contributed with PR reviews.||• Carried out React and best practices mentorship for Junior colleagues.",
-      "webImg": "https://media.giphy.com/media/1P00ZTh1zpww2bnT2v/source.gif",
+      "webImg": "bonvivir.mov",
       "link": "https://mundohafele.com/producto/9053",
       "status": 1
     },

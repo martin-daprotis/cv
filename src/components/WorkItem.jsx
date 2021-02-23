@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{lazy,Suspense} from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import {
   Accordion,
@@ -9,7 +9,9 @@ import {
   Grid,
 } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+const MediaWrapper = lazy(() => import('./MediaWrapper'));
 
+ 
 const useStyles = makeStyles((theme) => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -89,11 +91,9 @@ function WorkItem({ panel, data }) {
           {webImg && 
                     <Grid item>
                       <a style={{display: "table-cell"}} href={link} target="_blank" rel="noopener noreferrer">
-                      <img
-                        className={classes.image}
-                        src={webImg}
-                        alt="web-example"
-                      />
+                        <Suspense fallback={link}>
+                          <MediaWrapper src={webImg} alt="web-example"/>
+                        </Suspense>
                       </a>
                     </Grid>
           }
