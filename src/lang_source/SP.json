@@ -107,127 +107,127 @@
   ],
   "knowledge": {
     "work_related": [
-        {
-          "title": "web_development",
-          "bgColor": "#ef5350",
-          "list": [
-            {
-              "title": "JavaScript",
-              "icon": "devicon-javascript-plain",
-              "value": 80
-            },
-            {
-              "title": "Jquery",
-              "icon": "devicon-jquery-plain",
-              "value": 80
-            },
-            { "title": "ES6+", "icon": "", "value": 80 },
-            { "title": "React.Js", "icon": "cib-react", "value": 40 },
-            {
-              "title": "Redux",
-              "icon": "cib-redux ",
-              "value": 70
-            },
-            {
-              "title": "Graphql",
-              "icon": "",
-              "value": 50
-            },
-            {
-              "title": "Node.Js",
-              "icon": "devicon-nodejs-plain",
-              "value": 60
-            },
-            {
-              "title": "Express.Js",
-              "icon": "devicon-express-original",
-              "value": 60
-            },
-            {
-              "title": "NEXT.Js",
-              "icon": "",
-              "value": 40
-            },
-            {
-              "title": "Python",
-              "icon": "devicon-python-plain",
-              "value": 40
-            },
-            { "title": "PHP", "icon": "devicon-php-plain", "value": 90 },
-            {
-              "title": "CodeIgniter",
-              "icon": "cib-codeigniter",
-              "value": 80
-            }
-          ]
-        },
-        {
-          "title": "web_design",
-          "bgColor": "#cebe32",
-          "list": [
-            { "title": "CSS", "icon": "devicon-css3-plain", "value": 60 },
-            { "title": "SASS", "icon": "devicon-sass-original", "value": 40 },
-            { "title": "HTML5", "icon": "devicon-html5-plain", "value": 70 },
-            { "title": "Bootstrap", "icon": "cib-bootstrap ", "value": 30 },
-            { "title": "Material UI", "icon": " devicon-materialui-plain", "value": 70 },
-            { "title": "Styled Components", "icon": "", "value": 50 }
-          ]
-        },
-        {
-          "title": "csv",
-          "bgColor": "#4db6ac",
-          "list": [
-            {
-              "title": "GIT",
-              "icon": "devicon-git-plain",
-              "value": 80
-            }
-          ]
-        },
-        {
-          "title": "db",
-          "bgColor": "#8bc34a",
-          "list": [
-            { "title": "MySQL", "icon": "cib-mysql", "value": 90 },
-            {
-              "title": "Oracle",
-              "icon": "devicon-oracle-original",
-              "value": 30
-            },
-            {
-              "title": "Mongo DB",
-              "icon": "devicon-mongodb-plain",
-              "value": 60
-            }
-          ]
-        },
-        {
-          "title": "project_managment",
-          "bgColor": "#3283ce",
-          "list": [
-            {
-              "title": "Agile/SCRUM",
-              "icon": "",
-              "value": 60
-            },
-            {
-              "title": "Jira",
-              "icon": "",
-              "value": 40
-            }
-          ]
-        },
-        {
-          "title": "other_technologies",
-          "bgColor": "#3283ce",
-          "list": [
-            {
-              "title": "Docker",
-              "icon": "cib-docker",
-              "value": 40
-            }
-          ]
-        }
+      {
+        "title": "web_development",
+        "bgColor": "#ef5350",
+        "list": [
+          {
+            "title": "JavaScript",
+            "icon": "devicon-javascript-plain",
+            "value": 80
+          },
+          {
+            "title": "Jquery",
+            "icon": "devicon-jquery-plain",
+            "value": 80
+          },
+          { "title": "ES6+", "icon": "", "value": 80 },
+          { "title": "React.Js", "icon": "cib-react", "value": 70 },
+          {
+            "title": "Redux",
+            "icon": "cib-redux ",
+            "value": 70
+          },
+          {
+            "title": "Graphql",
+            "icon": "",
+            "value": 50
+          },
+          {
+            "title": "Node.Js",
+            "icon": "devicon-nodejs-plain",
+            "value": 60
+          },
+          {
+            "title": "Express.Js",
+            "icon": "devicon-express-original",
+            "value": 60
+          },
+          {
+            "title": "NEXT.Js",
+            "icon": "",
+            "value": 50
+          },
+          {
+            "title": "Python",
+            "icon": "devicon-python-plain",
+            "value": 40
+          },
+          { "title": "PHP", "icon": "devicon-php-plain", "value": 90 },
+          {
+            "title": "CodeIgniter",
+            "icon": "cib-codeigniter",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "title": "web_design",
+        "bgColor": "#cebe32",
+        "list": [
+          { "title": "CSS", "icon": "devicon-css3-plain", "value": 60 },
+          { "title": "SASS", "icon": "devicon-sass-original", "value": 40 },
+          { "title": "HTML5", "icon": "devicon-html5-plain", "value": 70 },
+          { "title": "Bootstrap", "icon": "cib-bootstrap ", "value": 30 },
+          { "title": "Material UI", "icon": " devicon-materialui-plain", "value": 70 },
+          { "title": "Styled Components", "icon": "", "value": 60 }
+        ]
+      },
+      {
+        "title": "csv",
+        "bgColor": "#4db6ac",
+        "list": [
+          {
+            "title": "GIT",
+            "icon": "devicon-git-plain",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "title": "db",
+        "bgColor": "#8bc34a",
+        "list": [
+          { "title": "MySQL", "icon": "cib-mysql", "value": 90 },
+          {
+            "title": "Oracle",
+            "icon": "devicon-oracle-original",
+            "value": 30
+          },
+          {
+            "title": "Mongo DB",
+            "icon": "devicon-mongodb-plain",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "title": "project_managment",
+        "bgColor": "#3283ce",
+        "list": [
+          {
+            "title": "Agile/SCRUM",
+            "icon": "",
+            "value": 60
+          },
+          {
+            "title": "Jira",
+            "icon": "",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "title": "other_technologies",
+        "bgColor": "#3283ce",
+        "list": [
+          {
+            "title": "Docker",
+            "icon": "cib-docker",
+            "value": 40
+          }
+        ]
+      }
     ],
     "professional_skills": {
       "bgColor": "#fba661",

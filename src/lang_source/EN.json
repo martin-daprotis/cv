@@ -122,7 +122,7 @@
             "value": 80
           },
           { "title": "ES6+", "icon": "", "value": 80 },
-          { "title": "React.Js", "icon": "cib-react", "value": 40 },
+          { "title": "React.Js", "icon": "cib-react", "value": 70 },
           {
             "title": "Redux",
             "icon": "cib-redux ",
@@ -146,7 +146,7 @@
           {
             "title": "NEXT.Js",
             "icon": "",
-            "value": 40
+            "value": 50
           },
           {
             "title": "Python",
@@ -170,7 +170,7 @@
           { "title": "HTML5", "icon": "devicon-html5-plain", "value": 70 },
           { "title": "Bootstrap", "icon": "cib-bootstrap ", "value": 30 },
           { "title": "Material UI", "icon": " devicon-materialui-plain", "value": 70 },
-          { "title": "Styled Components", "icon": "", "value": 50 }
+          { "title": "Styled Components", "icon": "", "value": 60 }
         ]
       },
       {
