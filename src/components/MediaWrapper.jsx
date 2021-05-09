@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const vidExt = ['.mov','.avi','.mp4','.mkv']
-
 const MediaWrapper = ({src,alt}) => {
   const classes = useStyles()
   return (
